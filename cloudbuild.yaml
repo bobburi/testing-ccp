@@ -1,30 +1,41 @@
-steps: 
-- name: 'hashicorp/terraform:1.0.0'
-   entrypoint: 'sh'
- args: 
- -'-c' 
- -|
-echo "branch $BRANCH_NAME" 
-if [ ! -z "$BRANCH_NAME" -a -d "terraform/environments/$BRANCH_NAME/" ]; then
-cd terraform/environments/$BRANCH_NAME 
-echo "run init" 
-terraform init 
-echo "run validate" 
-terraform validate 
-echo "run plan" terraform plan -out terraform.plan
-terraform apply -auto-approve terraform.plan 
-else
-for dir in terraform/environments/*/
-cd ${dir} 
-env=${dir%*/} 
-env=${env#*/}
-echo ...
-echo "*************** TERRAFOM PLAN ****************** echo "******* At environment: ${env} *********
-echo
-"*************************************************"
-terraform init 
-terraform validate 
-terraform plan || exit 1
-cd ../../ 
-done
-fi
+- id: 'tf plan'
+  name: 'hashicorp/terraform:1.0.0'
+  entrypoint: 'sh'
+  args: 
+  - '-c'
+  - | 
+      if [ -d "environments/$BRANCH_NAME/" ]; then
+        cd environments/$BRANCH_NAME
+        terraform plan
+      else
+        for dir in environments/*/
+        do 
+          cd ${dir}   
+          env=${dir%*/}
+          env=${env#*/}  
+          echo ""
+          echo "*************** TERRAFOM PLAN ******************"
+          echo "******* At environment: ${env} ********"
+          echo "*************************************************"
+          terraform plan || exit 1
+          cd ../../
+        done
+      fi 
+Similarly, the terraform apply command runs for environment branches, but it is completely ignored in any other case. In this section, you have submitted a code change to a new branch, so no infrastructure deployments were applied to your Google Cloud project.
+
+cloudbuild.yamlView on GitHub
+
+- id: 'tf apply'
+  name: 'hashicorp/terraform:1.0.0'
+  entrypoint: 'sh'
+  args: 
+  - '-c'
+  - | 
+      if [ -d "environments/$BRANCH_NAME/" ]; then
+        cd environments/$BRANCH_NAME      
+        terraform apply -auto-approve
+      else
+        echo "***************************** SKIPPING APPLYING *******************************"
+        echo "Branch '$BRANCH_NAME' does not represent an oficial environment."
+        echo "*******************************************************************************"
+      fi

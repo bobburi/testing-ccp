@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "testing-jenkins-350516",
+  "private_key_id": "53cd947a703980a8802a8eb39f422ddb4733800a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+cR+05odtYg3L\nOLqvLEgO4BkHziJ3mBfauFxmaQ7f8vqMD7sTBhHKcqgWLm9jPKDuF9EY68pAyWi0\nsTSG2mtJM+gnUoMM42ixm6VG8Yzhw9CApEqrTG8cmcZFkRchsDQdSiOcwPd8cOEK\nq3DekA4BkliJwSv6t1OTdeR+lV3GU1sU+HA5GKJhJSXSuuIaIxPhGecdoDO7E0yf\nPLa8u6V/p6tufUMBvZjhCk1yyZk2sJ69gGJ4uiRkBMOIhcYQw93HEwqhxAn0VGgS\nureFLhPCs4Qi5ctLPzBng/6Yps6lGSpKYyfcLWb9HXlXRMFfml+cn8s5dCoDndEm\ncQzlSvDfAgMBAAECggEAAoT2mWsPUZghfJXEinq4fVHjouHMPO7LKf6UYlpzcu0A\n+YdfvzGuXJJFvP1iRdrQejXgc0bzRwYjF3jcrAgJsU85fAOwbiQ4B1l6x0R8y6PO\nh1UlE70QHz29jMANoUl2dwi7DeDTpVbM81ovRRJ8zPKFr1TZ4xg3x9SgcDhDpFMC\nImjwqblCqvUXSoteLaENUZYbfXoICDMXKCAqTp0Hh9ZrBkCvGnkN6quMiPC5nlgE\neUDHNRzd5Nwy165zPdDmqDovaosqNf0cDV00ViPIqe+Z4hRw05QTUYa0D0Z46usH\ndiJXNKhYjTkAsl/819Jnjy+yZxTb1UVhgYFGPH65oQKBgQDiZTFT0ARfekHWpFE4\ngK7IqLuH4nMKV3b2E2a8BU+jfGGZqYUs3AMxRYCMdcIlAK9uy8xAxWwJGH7SxUlR\nqxSqS/9FQC5NPL3LwZGZ6v6BPnV/CM3IEsYLIvCG20lGoCBXZ67xCFNFWQ88QW1G\nA9dh3f/JAGOxmAgxKLWvPdswbwKBgQDXWFsFLu7xDCnOQWknYsLZ8WC2KeWOTbl2\n9lVon2fU4CbPudW63L/mXDZtSD8YXH9SaTbM/WVuWMh22eK3DMQGj8rxwH2Y8al+\n8gHu2QsER1aUsqc/J6v2b/l1YkPJKLcpWg1JIobNnbD07XuWlGFwbjxUFBQJ81iR\n2hGpT8CekQKBgQCA5mC5eZyjx/YogZIE+6+IbBmp+pLJdpcy8ET0FIoNaUogtVYv\n/myK5ymTz5BkhQldqgd3cXBblWjQFKf0KdYwR+jlwu8Z5tWhZ2rBGf0iFS/MznRr\nz9SWjqQoBD6qSY1gdpYygiz3NQfppM7UqGc/P6jdBq28dfVkF+uqBSwBXQKBgQCK\n+ausObDdAcONJ+usDnG/46ZNidZrM0AJRUqzfYSt/octsjn8IXD7QvGhL2oA19kX\nn21NeA9Y2pVtForZJbTwoyYPRPIJnZSMp7SVp58TgNKgnnePK5QwM+2jUup6TPuA\nBWzjkRO8aROFzinfcR09SPdIL7kK/vBfGIQjZ6Pg8QKBgDWR2clwW4benzj7k+rN\nCwtHIdnBG8M7XKh4Hb85YiIDF7EnMYe9qlEyPVg8I43kdFUXQ9YSUDGQnIV0IGeE\nlIos7Jdq347ms+4amhJ9EFHjrHgtqKWN6xqPOxg3ILVLK/NPchCpr+UYNF0bmKma\nf51lD+5i9usKYxmmbW6Y82CX\n-----END PRIVATE KEY-----\n",
+  "client_email": "tersing-newsa@testing-jenkins-350516.iam.gserviceaccount.com",
+  "client_id": "102543728673094777908",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tersing-newsa%40testing-jenkins-350516.iam.gserviceaccount.com"
+}
